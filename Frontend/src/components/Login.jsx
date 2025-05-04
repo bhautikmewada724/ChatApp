@@ -21,7 +21,7 @@ function Login() {
     };
     // console.log(userInfo);
     axios
-      .post("/https://chatapp-backened-r6dr.onrender.com/user/login", userInfo)
+      .post("https://chatapp-backened-r6dr.onrender.com/user/login", userInfo)
       .then((response) => {
         if (response.data) {
           toast.success("Login successful");
